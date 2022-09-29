@@ -1,0 +1,107 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.site{
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px 0 40px;
+    align-items: center;
+    background-color: whitesmoke;
+
+    &__titre{
+        font-size: 3rem;
+    }
+
+    &__underline{
+        border-bottom: 6px solid dodgerblue;
+        position: absolute;
+        height: 70px;
+        width: 100px;
+    }
+
+    &__contenu{
+        background-color: white;
+        border-radius: 5px;
+        padding: 20px;
+        height: 75%;
+        width: 45%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.442);
+    }
+
+    &__profil{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    &__image, &__cadre{
+        background-color: dodgerblue;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    &__image{
+        background-image: url("./images/user-1.jpg");
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        right: 38.3%;
+        top: 3px;
+    }
+
+    &__identifiant{
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    &__nom{
+        font-weight: bold;
+    }
+
+    &__role{
+        color: dodgerblue;
+    }
+
+    &__description{
+        color: gray;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    &__chevron{
+        background: none;
+        border: none;
+        color: dodgerblue;
+        font-size: 45px;
+    }
+
+    &__bouton{
+        border: 2px solid dodgerblue;
+        border-radius: 5px;
+        color: dodgerblue;
+        padding: 5px 10px;
+    }
+
+    &__pied{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+button{
+    cursor: pointer;
+}
