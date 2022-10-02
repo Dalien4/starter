@@ -44,7 +44,6 @@
   border-radius: 50%;
 }
 .site__image {
-  background-image: url("./images/user-1.jpg");
   background-size: cover;
   background-position: center;
   position: absolute;
